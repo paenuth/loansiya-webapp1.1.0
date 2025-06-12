@@ -15,7 +15,14 @@ export default function LoanOfficerDashboard({ navigation }) {
         <Text style={styles.page}>Dashboard</Text>
         <View style={styles.right}>
           <Text style={styles.role}>Loan Officer</Text>
-          <Text style={styles.logout}>Logout</Text>
+
+          <TouchableOpacity onPress={() => navigation.navigate('LoanOfficerNotifications')}>
+            <Text style={styles.icon}>🔔</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={() => navigation.replace('Login')}>
+            <Text style={styles.logout}>Logout</Text>
+          </TouchableOpacity>
         </View>
       </View>
 
@@ -76,6 +83,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
   },
+  icon: {
+  fontSize: 18,
+  marginRight: 10,
+},
+
   content: {
     flex: 1,
     padding: 20,

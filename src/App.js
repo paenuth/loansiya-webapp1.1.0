@@ -18,7 +18,7 @@ import OpsClientListScreen from './screens/ops/OpsClientListScreen';
 import OpsClientProfileScreen from './screens/ops/OpsClientProfileScreen';
 import OpsPendingListScreen from './screens/ops/OpsPendingListScreen';
 import OpsPendingLoanDetailScreen from './screens/ops/OpsPendingLoanDetailScreen';
-
+import LoanOfficerNotifications from './screens/loanofficer/LoanOfficerNotifications';
 
 
 // Contexts
@@ -75,7 +75,8 @@ export default function App() {
             <Stack.Screen name="OpsClientProfile" component={OpsClientProfileScreen} />
             <Stack.Screen name="OpsPendingList" component={OpsPendingListScreen} />
             <Stack.Screen name="OpsPendingLoanDetail" component={OpsPendingLoanDetailScreen} />
-            
+            <Stack.Screen name="LoanOfficerNotifications" component={LoanOfficerNotifications} />
+
           </Stack.Navigator>
         </NavigationContainer>
       </UsersContext.Provider>
